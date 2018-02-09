@@ -1,0 +1,25 @@
+$header-gradient-top: #f3f3f3;
+$header-gradient-bottom: #e2e2e2;
+$header-height: 50px;
+
+#header {
+    display: block;
+    height: $header-height;
+    margin: 0;
+    padding: 0 13px 0 0;
+    background-color: #f3f3f3;
+    background-image: linear-gradient($header-gradient-top, $header-gradient-bottom);    
+    background-repeat: repeat-x;
+    position: relative;
+    z-index: 905
+}
+
+.fixed-header {
+    position: fixed;
+    width: 100%;
+    z-index: 905;
+    top: 0;
+    border-bottom: 2px solid #999;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    box-shadow: -11px 12px 23px rgba(0, 0, 0, .1)
+}
