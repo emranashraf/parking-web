@@ -14,6 +14,7 @@ import {
   AuthEffects,
   AuthService
 } from 'parking-core';
+import { AuthModule } from './auth/auth.module';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,10 @@ import {
     BrowserModule,
     AppRoutingModule,
 
+    // Auth Module
+    AuthModule,
+
+    // Layouts
     LayoutModule,
 
     StoreModule.forRoot({ auth: reducer }),
