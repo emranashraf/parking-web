@@ -13,9 +13,7 @@ const routes: Routes = [
         path: '', redirectTo: 'dashboard', pathMatch: 'full'
       },
       {
-        path: 'dashboard',
-        component: DashboardComponent,
-        data: { pageTitle: 'Dashboard' }
+        path: 'dashboard', component: DashboardComponent, data: { pageTitle: 'Dashboard' }
       }
     ]
   }
